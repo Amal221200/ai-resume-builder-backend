@@ -386,6 +386,9 @@ export interface ApiResumeResume extends Schema.CollectionType {
     jobTitle: Attribute.String;
     themeColor: Attribute.String & Attribute.DefaultTo<'#222222'>;
     summary: Attribute.Text;
+    experience: Attribute.Component<'experience.experience', true>;
+    education: Attribute.Component<'education.education', true>;
+    skills: Attribute.Component<'skills.skills', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
