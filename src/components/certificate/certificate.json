@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_certificate_certificates",
+  "info": {
+    "displayName": "Certificate",
+    "icon": "write",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

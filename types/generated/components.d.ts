@@ -1,5 +1,20 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface CertificateCertificate extends Schema.Component {
+  collectionName: 'components_certificate_certificates';
+  info: {
+    displayName: 'Certificate';
+    icon: 'write';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    link: Attribute.String;
+    provider: Attribute.String;
+    description: Attribute.Text;
+  };
+}
+
 export interface EducationEducation extends Schema.Component {
   collectionName: 'components_education_educations';
   info: {
@@ -34,13 +49,29 @@ export interface ExperienceExperience extends Schema.Component {
     state: Attribute.String;
     companyName: Attribute.String;
     workSummary: Attribute.RichText;
+    skills: Attribute.String;
   };
 }
 
-export interface SkillsSkills extends Schema.Component {
+export interface ProjectProject extends Schema.Component {
+  collectionName: 'components_project_projects';
+  info: {
+    displayName: 'Project';
+    icon: 'folder';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    link: Attribute.String;
+    stack: Attribute.String;
+    description: Attribute.RichText;
+  };
+}
+
+export interface SkillSkills extends Schema.Component {
   collectionName: 'components_skills_skills';
   info: {
-    displayName: 'Skills';
+    displayName: 'Skill';
     icon: 'paint';
     description: '';
   };
@@ -60,9 +91,11 @@ export interface SkillsSkills extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'certificate.certificate': CertificateCertificate;
       'education.education': EducationEducation;
       'experience.experience': ExperienceExperience;
-      'skills.skills': SkillsSkills;
+      'project.project': ProjectProject;
+      'skill.skills': SkillSkills;
     }
   }
 }

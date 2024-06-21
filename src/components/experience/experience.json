@@ -31,6 +31,9 @@
     },
     "workSummary": {
       "type": "richtext"
+    },
+    "skills": {
+      "type": "string"
     }
   }
 }

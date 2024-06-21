@@ -54,12 +54,12 @@
     "summary": {
       "type": "text"
     },
-    "experience": {
+    "experiences": {
       "type": "component",
       "repeatable": true,
       "component": "experience.experience"
     },
-    "education": {
+    "educations": {
       "type": "component",
       "repeatable": true,
       "component": "education.education"
@@ -68,7 +68,17 @@
       "displayName": "Skills",
       "type": "component",
       "repeatable": true,
-      "component": "skills.skills"
+      "component": "skill.skills"
+    },
+    "certificates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "certificate.certificate"
+    },
+    "projects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project.project"
     }
   }
 }
