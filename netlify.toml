@@ -2,9 +2,6 @@
 command = 'yarn build'
 publish = ".strapi/client"
 
-[[plugins]]
-  package = "@sls-next/lambda-at-edge"
-
 [[headers]]
   for = "/*"
   [headers.values]
