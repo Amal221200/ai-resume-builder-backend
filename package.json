@@ -11,7 +11,6 @@
     "deploy": "strapi deploy"
   },
   "dependencies": {
-    "@sls-next/lambda-at-edge": "^3.7.0",
     "@strapi/plugin-cloud": "4.25.0",
     "@strapi/plugin-i18n": "4.25.0",
     "@strapi/plugin-users-permissions": "4.25.0",
@@ -33,5 +32,8 @@
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@sls-next/lambda-at-edge": "^3.7.0"
+  }
 }
