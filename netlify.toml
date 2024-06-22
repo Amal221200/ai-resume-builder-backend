@@ -1,8 +1,18 @@
 [build]
 command = 'yarn build'
-publish = "/dist/build"
-base = "/"
+publish = ".strapi/client"
+
+[[plugins]]
+  package = "@sls-next/lambda-edge-function"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
 
 [[redirects]]
 from = "/*"
-to = "/admin"
+to = "/index.html"
+status=200
