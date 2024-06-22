@@ -77,14 +77,6 @@ export interface SkillSkills extends Schema.Component {
   };
   attributes: {
     name: Attribute.String;
-    rating: Attribute.Integer &
-      Attribute.SetMinMax<
-        {
-          min: 0;
-          max: 5;
-        },
-        number
-      >;
   };
 }
 

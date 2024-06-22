@@ -9,11 +9,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "rating": {
-      "type": "integer",
-      "max": 5,
-      "min": 0
     }
   }
 }
